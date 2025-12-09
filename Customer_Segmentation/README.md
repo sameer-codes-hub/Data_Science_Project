@@ -42,6 +42,31 @@ This project performs customer segmentation using K-Means clustering to group cu
 3. ## 🎯 Output
 The model classifies customers into different segments and displays the predicted cluster.
 
+## 📊 Customer Segmentation Using Machine Learning (K-Means)
+
+This project segments customers based on:
+- Price
+- Freight value
+- Review score
+- Purchase year & month
+- Estimated delivery days
+- Order approval days
+- Shipping time
+- Order approval hour
+
+✅ Preprocessing using StandardScaler  
+✅ Clustering using K-Means  
+✅ Model saved using Pickle  
+✅ Deployed using Streamlit Cloud  
+
+### 🧠 Output:
+The model predicts customer cluster and provides business interpretation like:
+- Fast shipping + low price
+- Slow shipping + high price
+- Medium behavior customers
+
+## 🚀 Live Demo (Streamlit App)
+https://datascienceproject-3yipeb8sts67untbeptaxp.streamlit.app/
 ---
 
 ## 👤 Author---===-----

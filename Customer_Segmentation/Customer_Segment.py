@@ -2,12 +2,12 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-import json
 
 st.set_page_config(page_title="Customer Segmentation Using K-means")
 pickle.load(open("Customer_Segmentation/scaler_v1.pkl", "rb"))
 pickle.load(open("Customer_Segmentation/kmeans_v1.pkl", "rb"))
-pickle.load(open("Customer_Segmentation/feature.pkl", "rb"))
+with open("Customer_Segmentation/feature.pkl", "rb") as f:
+    feature = pickle.load(f)
 st.write("### Enter Customer Order Details")
 user_inputs = []
 user_data = {}

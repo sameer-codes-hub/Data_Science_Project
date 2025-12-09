@@ -5,9 +5,9 @@ import numpy as np
 import json
 
 st.set_page_config(page_title="Customer Segmentation Using K-means")
-sc=pickle.load(open("scaler_v1.pkl","rb"))
-kmean=pickle.load(open("kmeans_v1.pkl","rb"))
-feature=pickle.load(open("feature.pkl","rb"))
+pickle.load(open("Customer_Segmentation/scaler_v1.pkl", "rb"))
+pickle.load(open("Customer_Segmentation/kmeans_v1.pkl", "rb"))
+pickle.load(open("Customer_Segmentation/feature.pkl", "rb"))
 st.write("### Enter Customer Order Details")
 user_inputs = []
 user_data = {}

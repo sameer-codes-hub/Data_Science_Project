@@ -3,14 +3,16 @@ import pickle
 import pandas as pd
 import numpy as np
 
-st.set_page_config(page_title="Customer Segmentation Using K-means")
+st.set_page_config(page_title="Customer Segmentation App",
+                   page_icon="📊",
+                   layout="centered")
 with open("Customer_Segmentation/scaler_v1.pkl", "rb") as f:
     sc = pickle.load(f)
 with open("Customer_Segmentation/kmeans_v1.pkl", "rb") as f:
     model = pickle.load(f)        
 with open("Customer_Segmentation/feature.pkl", "rb") as f:
     feature = pickle.load(f)
-st.write("### Enter Customer Order Details")
+st.markdown("## 📥 Enter Customer Order Details")
 user_inputs = []
 user_data = {}
 for col in feature:
@@ -25,12 +27,17 @@ if  st.button("Predict Cluster"):
     cluster=model.predict(scaled_data) [0]
     st.success(f"🎯 **Predicted Cluster:{cluster}**")
     meanings={
-    0: "🟢 Cluster 0 — Fast shipping + low/medium price purchases",
-    1: "🟡 Cluster 1 — Medium shipping + medium price purchases",
-    2: "🔵 Cluster 2 — Slow shipping + high price purchases",
-    3: "🟣 Cluster 3 — Very slow shipping + very high price / high freight purchases"
+    0: "🟢 Cluster 0 — Fast shipping + low/medium price purchase customers (value-focused customers)",
+    1: "🟡 Cluster 1 — Medium shipping + medium price purchase customers (Balance behavior customers)",
+    2: "🔵 Cluster 2 — Slow shipping + high price purchase customers (Premium but less time-sensitive)",
+    3: "🟣 Cluster 3 — Very slow shipping + very high price / high freight purchase customers (High-value luxury customers)"
     }    
-    st.write("### Cluster Interpratation")
-    st.info(meanings.get(cluster,"No interpreatation avaible"))
-    st.write("### Your Entered Data")
+    
+    st.info(f"🧠 Cluster Interpretation:{meanings.get(cluster,'No interpreatation avaible')}")
+    st.markdown("### 📋 Your Entered Data")
     st.table(pd.DataFrame([user_data]))
+    st.markdown("---")
+st.markdown(
+    "👤 *Author:* Mohamed Sameer  \n"
+    "💼 Aspiring Data Scientist | Machine Learning Enthusiast"
+)

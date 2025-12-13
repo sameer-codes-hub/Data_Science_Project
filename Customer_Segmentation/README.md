@@ -1,5 +1,8 @@
 # Customer Segmentation Using K-Means Clustering
 
+## 🚀 Live Demo (Streamlit App)
+https://datascienceproject-3yjpeb8sts67untbeptaxp.streamlit.app/
+
 ## 📌 Project Overview
 This project performs customer segmentation using K-Means clustering to group customers based on their behavior and features. It helps businesses understand different customer types and improve marketing strategies.
 
@@ -64,10 +67,6 @@ The model predicts customer cluster and provides business interpretation like:
 - Fast shipping + low price
 - Slow shipping + high price
 - Medium behavior customers
-
-## 🚀 Live Demo (Streamlit App)
-https://datascienceproject-3yipeb8sts67untbeptaxp.streamlit.app/
----
 
 ## 👤 Author---===-----
 *Mohamed Sameer*  

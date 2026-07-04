@@ -1,104 +1,35 @@
-🩺 Medical Q&A Chatbot Using NLP (TF-IDF)
-🚀 Live Demo (Streamlit App)
+# 🏥 MedSQUAD Medical Chatbot
 
-👉 https://medquad-chat-bot.streamlit.app/
+## Problem statement
+Patients often struggle to find quick, reliable answers to medical questions. This NLP chatbot provides instant responses to medical queries using a large curated Q&A dataset.
 
-📌 Project Overview
+## Results
+- Trained on **16,000+ medical Q&A pairs** from the MedQuAD dataset
+- Uses TF-IDF vectorisation and cosine similarity for answer retrieval
+- Deployed as a conversational Streamlit web app
 
-This project is a Medical Question & Answer Chatbot built using Natural Language Processing (NLP) techniques.
-It allows users to ask medical-related questions and returns the most relevant answer from the MedQuAD dataset using TF-IDF vectorization and cosine similarity.
+## Tech stack
+- Python, NLTK, Scikit-learn
+- NLP: TF-IDF, Cosine Similarity, Text Preprocessing
+- Streamlit
 
-⚠️ This chatbot is for educational and informational purposes only and is not a substitute for professional medical advice.
+## Live demo
+[▶ Open Streamlit App](https://medquad-chat-bot.streamlit.app/)
 
-🚀 Features
-
-NLP-based question answering system
-
-TF-IDF vectorization for text representation
-
-Cosine similarity for best answer matching
-
-Uses real MedQuAD medical dataset
-
-Interactive UI using Streamlit
-
-Fully deployed on Streamlit Cloud
-
-🛠️ Tech Stack
-
-Python
-
-Pandas
-
-NumPy
-
-Scikit-learn
-
-Streamlit
-
-NLP (TF-IDF, Cosine Similarity)
-
-📂 Project Files
-
-Chat_bot.py – Streamlit application (main file)
-
-medquad.csv – Medical Q&A dataset
-
-NLP_Chatbot.ipynb – Model experimentation notebook
-
-NLP_PREPROCESS.ipynb – Text preprocessing steps
-
-requirements.txt – Required Python libraries
-
-runtime.txt – Python version configuration
-
-▶️ How to Run This Project Locally
-
-Install required packages
-
+## Run locally
+```bash
+git clone https://github.com/sameer-codes-hub/Data_Science_Project
+cd Medical_Chatbot
 pip install -r requirements.txt
-
-
-Run the Streamlit app
-
 streamlit run Chat_bot.py
+```
 
-🎯 Output
+## Files
+| File | Description |
+|------|-------------|
+| `Chat_bot.py` | Main Streamlit app |
+| `NLP_Chatbot.ipynb` | Model training notebook |
+| `medquad.csv` | Medical Q&A dataset |
 
-User enters a medical question
 
-Chatbot finds the most similar medical question
 
-Displays the best-matched medical answer
-
-Handles unknown questions gracefully
-
-🧠 How It Works (NLP Pipeline)
-
-Text cleaning & preprocessing
-
-TF-IDF vectorization of questions
-
-Cosine similarity calculation
-
-Best answer retrieval based on similarity score
-
-Threshold-based fallback response
-
-📊 Example Use Cases
-
-“What are the symptoms of glaucoma?”
-
-“How is diabetes diagnosed?”
-
-“What causes high blood pressure?”
-
-👤 Author
-
-Mohamed Sameer
-📌 Domain: Data Science | NLP | Machine Learning
-📌 Tools: Python, Streamlit, Scikit-learn
-
-⭐ Note
-
-If you find this project useful, feel free to star the repository ⭐

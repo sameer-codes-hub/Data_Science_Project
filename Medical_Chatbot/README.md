@@ -2,7 +2,7 @@
 
 MedSQUAD is an NLP-based medical question-answering retrieval chatbot that retrieves relevant answers to healthcare-related questions from a medical Q&A dataset.
 
-The project demonstrates practical applications of Natural Language Processing (NLP), text preprocessing, TF-IDF vectorization, cosine similarity, and Streamlit deployment.
+The project demonstrates practical applications of Natural Language Processing (NLP), text representation, TF-IDF vectorization, cosine similarity, and Streamlit deployment.
 
 ## 🚀 Live Demo
 
@@ -26,7 +26,7 @@ Instead of generating new medical responses, MedSQUAD uses an information-retrie
 The chatbot follows an NLP-based retrieval pipeline:
 
 1. User enters a healthcare-related question.
-2. The input text is preprocessed.
+2. The input text is converted into a TF-IDF representation..
 3. The medical Q&A dataset is converted into numerical representations using **TF-IDF**.
 4. **Cosine similarity** is calculated between the user's question and available questions.
 5. The most relevant matching Q&A pair is identified.
@@ -35,23 +35,19 @@ The chatbot follows an NLP-based retrieval pipeline:
 ### NLP Pipeline
 
 ```text
+
 User Question
-      ↓
-Text Preprocessing
-      ↓
-Tokenization
-      ↓
-Stopword Removal
-      ↓
-Stemming / Lemmatization
       ↓
 TF-IDF Vectorization
       ↓
 Cosine Similarity
       ↓
-Most Relevant Answer
+Most Relevant Q&A Pair
+      ↓
+Answer Retrieval
       ↓
 Streamlit Interface
+
 ```
 ## 📊 Dataset
 
@@ -63,14 +59,12 @@ The system retrieves relevant answers from the dataset rather than generating me
 
 ## 🔧 NLP Techniques
 
-The project includes the following text-processing techniques:
+The project uses the following NLP and information-retrieval techniques:
 
-- Tokenization
-- Stopword removal
-- Stemming
-- Lemmatization
 - TF-IDF Vectorization
 - Cosine Similarity
+- Text Matching
+- Information Retrieval
 
 These techniques are used to transform and compare text so that the system can identify relevant answers.
 
@@ -83,8 +77,6 @@ These techniques are used to transform and compare text so that the system can i
 ### Libraries & Frameworks
 
 - Pandas
-- NumPy
-- NLTK
 - Scikit-learn
 - Streamlit
   
@@ -93,7 +85,7 @@ These techniques are used to transform and compare text so that the system can i
 - Natural Language Processing
 - TF-IDF
 - Cosine Similarity
-- Text Preprocessing
+- Information Retrieval
 
 ## 📁 Project Structure
 
@@ -104,6 +96,7 @@ Data_Science_Project/
 │   ├── Chat_bot.py
 │   └── README.md
 │
+├── Chat_bot.py
 ├── medquad.csv
 ├── requirements.txt
 └── other project files
@@ -132,7 +125,7 @@ pip install -r requirements.txt
 ### 4. Run the Streamlit application
 
 ```bash
-streamlit run Medical_Chatbot/Chat_bot.py
+streamlit run Chat_bot.py
 ```
 
 The application will open in your local browser.
@@ -142,10 +135,10 @@ The application will open in your local browser.
 Through this project, I strengthened my practical understanding of:
 
 - Natural Language Processing
-- Text preprocessing
 - Information retrieval
 - TF-IDF vectorization
 - Cosine similarity
+- Text matching
 - Python data processing
 - Scikit-learn
 - Streamlit application development

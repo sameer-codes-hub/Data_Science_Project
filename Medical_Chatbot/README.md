@@ -52,7 +52,8 @@ Cosine Similarity
 Most Relevant Answer
       ↓
 Streamlit Interface
-📊 Dataset
+```
+## 📊 Dataset
 
 The project uses the MedQuAD dataset, containing more than 16,000 medical question-answer pairs.
 
@@ -60,66 +61,97 @@ The dataset provides the underlying collection of questions and answers used by 
 
 The system retrieves relevant answers from the dataset rather than generating medical diagnoses or treatment recommendations.
 
-🔧 NLP Techniques
+## 🔧 NLP Techniques
 
 The project includes the following text-processing techniques:
 
-Tokenization
-Stopword removal
-Stemming
-Lemmatization
-TF-IDF Vectorization
-Cosine Similarity
+- Tokenization
+- Stopword removal
+- Stemming
+- Lemmatization
+- TF-IDF Vectorization
+- Cosine Similarity
 
 These techniques are used to transform and compare text so that the system can identify relevant answers.
 
-🛠️ Tech Stack
-Programming Language
-Python
-Libraries & Frameworks
-Pandas
-NumPy
-NLTK
-Scikit-learn
-Streamlit
-NLP
-Natural Language Processing
-TF-IDF
-Cosine Similarity
-Text Preprocessing
-📁 Project Structure
-Medical_Chatbot/
+## 🛠️ Tech Stack
+
+### Programming Language
+
+- Python
+
+### Libraries & Frameworks
+
+- Pandas
+- NumPy
+- NLTK
+- Scikit-learn
+- Streamlit
+  
+ ### NLP
+ 
+- Natural Language Processing
+- TF-IDF
+- Cosine Similarity
+- Text Preprocessing
+
+## 📁 Project Structure
+
+```text
+Data_Science_Project/
 │
-├── Chat_bot.py
+├── Medical_Chatbot/
+│   ├── Chat_bot.py
+│   └── README.md
+│
+├── medquad.csv
 ├── requirements.txt
-├── README.md
-└── dataset / project files
-💻 Installation & Setup
-1. Clone the repository
+└── other project files
+```
+
+## 💻 Installation & Setup
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/sameer-codes-hub/Data_Science_Project.git
-2. Navigate to the project folder
-cd Data_Science_Project/Medical_Chatbot
-3. Install the required dependencies
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd Data_Science_Project
+```
+
+### 3. Install the required dependencies
+
+```bash
 pip install -r requirements.txt
-4. Run the Streamlit application
-streamlit run Chat_bot.py
+```
+
+### 4. Run the Streamlit application
+
+```bash
+streamlit run Medical_Chatbot/Chat_bot.py
+```
 
 The application will open in your local browser.
 
-🎯 Key Learning Outcomes
+## 🎯 Key Learning Outcomes
 
 Through this project, I strengthened my practical understanding of:
 
-Natural Language Processing
-Text preprocessing
-Information retrieval
-TF-IDF vectorization
-Cosine similarity
-Python data processing
-Scikit-learn
-Streamlit application development
-Deploying machine-learning applications
-⚠️ Medical Disclaimer
+- Natural Language Processing
+- Text preprocessing
+- Information retrieval
+- TF-IDF vectorization
+- Cosine similarity
+- Python data processing
+- Scikit-learn
+- Streamlit application development
+- Deploying machine-learning applications
+
+## ⚠️ Medical Disclaimer
 
 MedSQUAD is an educational and informational NLP project.
 
@@ -127,16 +159,16 @@ It is not a medical professional and should not be used for medical diagnosis, t
 
 Always consult a qualified healthcare professional for medical advice.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Mohamed Sameer Hamad
+**Mohamed Sameer Hamad**
 
 Data Analyst | Data Science & Machine Learning | AI & GenAI
 
-🔗 GitHub:
+🔗 **GitHub:**
 https://github.com/sameer-codes-hub
 
-🔗 LinkedIn:
+🔗 **LinkedIn:**
 https://www.linkedin.com/in/mohamed-sameer-hamad-585489292/
 
 

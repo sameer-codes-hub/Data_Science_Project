@@ -68,6 +68,9 @@ The model predicts customer cluster and provides business interpretation like:
 - Slow shipping + high price
 - Medium behavior customers
 
-## 👤 Author---===-----
-*Mohamed Sameer*  
-Data Scientist | Machine Learning Enthusiast
+## 👤 Author
+
+**Mohamed Sameer Hamad**
+
+Data Analyst | Data Science & Machine Learning
+

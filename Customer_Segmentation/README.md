@@ -28,7 +28,7 @@ This project performs customer segmentation using K-Means clustering to group cu
 ---
 
 ## 📂 Project Files
-- Customer_Segment.ipynb – Model training & analysis
+- ML_with_stat.ipynb – Data analysis, statistics & clustering
 - Customer_Segment.py – Streamlit web app
 - kmeans_v1.pkl – Trained K-Means model
 - scaler_v1.pkl – Scaler for input data

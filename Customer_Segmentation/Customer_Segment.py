@@ -24,16 +24,14 @@ st.markdown("## 📥 Enter Customer Order Details")
 user_inputs = []
 user_data = {}
 for col in feature:
-    value = st.number_input(f"{col}",step=1.0)
+    value = st.number_input(f"{col}", step=1.0)
     user_inputs.append(value)
     user_data[col] = value
-if  st.button("Predict Cluster"):
-    st.write("Feature order in Streamlit:",feature)
-    st.write("User inputs:",user_inputs)
-    data=np.array(user_inputs).reshape(1,-1)
-    scaled_data=sc.transform(data)
+if st.button("Predict Cluster"):
+    data = np.array(user_inputs).reshape(1, -1)
+    scaled_data = sc.transform(data)
     cluster = model.predict(scaled_data)[0]
-    st.success(f"🎯 **Predicted Cluster:{cluster}**")
+    st.success(f"🎯 **Predicted Cluster: {cluster}**")
     meanings={
     0: "🟢 Cluster 0 — Fast shipping + low/medium price purchase customers (value-focused customers)",
     1: "🟡 Cluster 1 — Medium shipping + medium price purchase customers (Balance behavior customers)",
@@ -41,7 +39,10 @@ if  st.button("Predict Cluster"):
     3: "🟣 Cluster 3 — Very slow shipping + very high price / high freight purchase customers (High-value luxury customers)"
     }    
     
-    st.info(f"🧠 Cluster Interpretation:{meanings.get(cluster,'No interpretation available')}")
+    st.info(
+           f"🧠 **Cluster Interpretation:** "
+    f"{meanings.get(cluster, 'No interpretation available')}"
+) 
     st.markdown("### 📋 Your Entered Data")
     st.table(pd.DataFrame([user_data]))
     st.markdown("---")

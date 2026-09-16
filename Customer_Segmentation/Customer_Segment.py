@@ -6,11 +6,11 @@ import numpy as np
 st.set_page_config(page_title="Customer Segmentation App",
                    page_icon="📊",
                    layout="centered")
-with open("Customer_Segmentation/scaler_v1.pkl", "rb") as f:
+with open("scaler_v1.pkl", "rb") as f:
     sc = pickle.load(f)
-with open("Customer_Segmentation/kmeans_v1.pkl", "rb") as f:
+with open("kmeans_v1.pkl", "rb") as f:
     model = pickle.load(f)        
-with open("Customer_Segmentation/feature.pkl", "rb") as f:
+with open("feature.pkl", "rb") as f:
     feature = pickle.load(f)
 st.markdown("## 📥 Enter Customer Order Details")
 user_inputs = []
